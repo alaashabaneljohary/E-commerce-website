@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop powered by PrestaShop">
+    <title>Akira - Fashion </title>
+    <link rel="shortcut icon" href="images/logo/demo2-logo.png" type="image/x-icon">
+     <!-- Install Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+     <!--Install CSS FLIE -->
+    <!--FontAwesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- StyleSheet-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+ <!--Start  Loading -->
+<div id="loading">
+    <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div> 
+</div>
+ <!-- End Loading --> 
+<!-- Start Section Nanigation Bar -->
+<main>
+ <div class="section-navbar d-none d-lg-block py-4">
+    <div class="container">
+     <div class="row  ">
+        <div class="col-lg-2">
+         <a href="images/logo/demo2-logo.png" class="navbar-brand">
+          <img src="images/logo/demo2-logo.png"  alt="">  
+         </a>   
+        </div> <!-- End col-md-3 -->
+        <div class="col-lg-7 text-center">
+          <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">SHOP</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">PAGES</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">ELEMENTOR LIVE</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">bUY</a></li>
+          </ul>  
+        </div> <!-- End Col-md-6 -->
+        <div class="col-lg-3">
+            <div class="linkItem">
+                <a href="#" class="nav-link" onclick="myClick()"> MY ACCOUNT</a>
+                <a href="#" class="nav-link"><i class="fas fa-search" id="search"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-heart"></i></a>
+                <a href="#" class="nav-link shoping"><i class="fas fa-shopping-cart"></i><span>05.4$</span></a>
+            </div>
+        </div>
+     </div>
+    </div>
+    <div id="itemForm">
+        <i class="fas fa-times" id="close"></i>
+        <span>Sign In</span>
+        <div id="divitionForms">
+          <label for="emailInput"> Email *</label>
+          <input type="email" class="form-control mb-2" id="emailForms">  
+
+          <label for="passinputs"> Email *</label>
+          <input type="password" class="form-control mb-2" id="passinputs">  
+
+          <button class="btn">Sign IN</button>
+          <a href="#" id="forgetpass">Forgot Your password ?</a>
+        </div>
+        <div class="row sochial">
+           <div class="col-6">
+            <a href="#"> <i class="fab fa-facebook-f"></i> FaceBook</a>
+           </div> 
+           <div class="col-6">
+            <a href="#"> <i class="fab fa-google"></i> Google</a>
+           </div> 
+           <div class="col-6">
+            <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+           </div> 
+           <div class="col-6">
+            <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+           </div> 
+        </div>
+    </div>
+ </div>   
+ <div id="searchInput">
+    <i class="fas fa-times" id="closeSearch"></i>
+    <div id="formSearch">
+        <input type="search" class="w-100 form-control d-inline-block">
+        <i class="fas fa-search" id="search"></i>
+        <select name="" class="form-select my-5">
+            <option value="Shop">Shop</option>
+            <option value="Close">Close</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Art">Art</option>
+        </select>
+        
+    </div>
+   
+</div>
+</main>
+<main>
+    <nav class="navbar bg-light fixed-top d-lg-none">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+             <img src="images/logo/demo2-logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <a href="images/logo/demo2-logo.png" class="navbar-brand">
+                    <img src="images/logo/demo2-logo.png" alt="">
+                </a>
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SHOP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PAGES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ELEMENTOR LIVE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BUY</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>    
+</main>
+<!-- Start Section Nanigation Bar -->
+<!-- Start Section Slider ========-->
+<main> 
+ <header class="py-5">
+   <div class="container">
+     <div class="sliderBg">
+      <div id="particles-js"></div>
+       <div id="itemImg">
+        <img src="images/slider-bg/demo2-slider1.jpg" alt="">
+        <img src="images/slider-bg/demo2-slider2.jpg" alt="">
+        <img src="images/slider-bg/demo2-slider3.jpg" alt="">
+       </div>
+       <div id="sliderCaption" class="ms-5">
+      
+            <div class="slide-heading">COLLECTION 2021</div>
+        <h2 class="ml2">
+            <div> Get Up to 50% Off 
+                <br> Select Styles. </div>
+        </h2>    
+         <a href="#" class="btn slide-button ">Shop Now</a>  
+       </div>
+     </div>
+   </div>  <!-- End Container-->
+ </header>   <!-- End Header -->
+</main> <!-- End Main-->
+<!-- End Section Slider ==========-->
+<!-- Start Section Home-Category  -->
+<main class="home-category">
+ <div class="container">
+  <div class="row">
+    <div class="col-md-4 category-item">
+       <div class="cate-image">
+          <img src="images/demo/demo2-MEN.jpg" class="w-100 img-thumbnail" alt="">
+       </div>
+       <div class="cate-btn">
+        <a href="#" class="btn">MEN</a>
+       </div>
+    </div>
+    <div class="col-md-4 category-item">
+        <div class="cate-image">
+           <img src="images/demo/demo2-WOMEN.jpg" class="w-100 img-thumbnail" alt="">
+        </div>
+        <div class="cate-btn">
+         <a href="#" class="btn">WOMEN</a>
+        </div>
+     </div>
+     <div class="col-md-4 category-item">
+        <div class="cate-image">
+           <img src="images/demo/demo2-ACCESSORIES.jpg" class="w-100 img-thumbnail" alt="">
+        </div>
+        <div class="cate-btn">
+         <a href="#" class="btn">ACCESSORIES</a>
+        </div>
+     </div>
+   
+  </div>
+ </div>   
+</main>
+<!-- End Section Home-Category ===-->
+<!--- Start Section Products =====-->
+<main>
+ <section class="Section-Products">
+  <div class="text-center my-3">
+    <span class="heading-title">AKIRA COLLECTIONS </span>
+    <h2 class="title">FEATURED PRODUCTS</h2>
+    <div class="description">
+        Nullam gravida, dolor ac ultrices lobortis, mi dolor justo.
+    </div>
+  </div>
+ <div class="container">
+    <div class="owl-carousel owl-theme row">
+        <div id="productItem" class="col-md-10 ">
+         <img src="images/demo-2/fusce-et-semper.jpg"  alt="">
+         <div id="imgOverlay" class="overflow-hidden">
+            <img src="images/demo-2/fusce-et-semper (1).jpg" alt="">
+         </div>   <!-- End imgOverlay--> 
+         <div class="productInfo">
+          <a href="#">
+            <i class="fas fa-cart-plus"></i>
+            <span>Select options</span>
+          </a>
+         </div> <!-- End productInfo-->
+         <div class="productCaption">
+            <a href="#" class="product_name">Fusce et semper</a>
+            <div class="product-cats">Shop</div>
+            <div class="info-product">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$99.00</div>
+         </div> <!-- End productCaption-->
+        </div>    <!-- End productItem-->
+        <div id="productItem" class="col-md-10 ">
+            <img src="images/demo-2/maecenas-non-laoreet (1).jpg"  alt="">
+            <div id="imgOverlay">
+               <img src="images/demo-2/maecenas-non-laoreet.jpg" alt="">
+            </div>   <!-- End imgOverlay--> 
+            <div class="productInfo">
+              <a href="#">
+                <i class="fas fa-cart-plus"></i>
+                <span>Select options</span>
+              </a>
+             </div> <!-- End productInfo-->
+             <div class="productCaption">
+                <a href="#" class="product_name">Fusce et semper</a>
+                <div class="product-cats">Shop</div>
+                <div class="info-product">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$99.00</div>
+             </div> <!-- End productCaption-->
+           </div>    <!-- End productItem-->
+           <div id="productItem" class="col-md-10 ">
+            <img src="images/demo-2/morbi-facilisis-quis (1).jpg"  alt="">
+            <div id="imgOverlay">
+               <img src="images/demo-2/morbi-facilisis-quis.jpg" alt="">
+            </div>   <!-- End imgOverlay--> 
+            <div class="productInfo">
+              <a href="#">
+                <i class="fas fa-cart-plus"></i>
+                <span>Select options</span>
+              </a>
+             </div> <!-- End productInfo-->
+             <div class="productCaption">
+                <a href="#" class="product_name">Fusce et semper</a>
+                <div class="product-cats">Shop</div>
+                <div class="info-product">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$99.00</div>
+             </div> <!-- End productCaption-->
+           </div>    <!-- End productItem-->
+           <div id="productItem" class="col-md-10 ">
+            <img src="images/demo-2/nulla-imperdiet-purus (1).jpg"  alt="">
+            <div id="imgOverlay">
+               <img src="images/demo-2/nulla-imperdiet-purus.jpg" alt="">
+            </div>   <!-- End imgOverlay--> 
+            <div class="productInfo">
+              <a href="#">
+                <i class="fas fa-cart-plus"></i>
+                <span>Select options</span>
+              </a>
+             </div> <!-- End productInfo-->
+             <div class="productCaption">
+                <a href="#" class="product_name">Fusce et semper</a>
+                <div class="product-cats">Shop</div>
+                <div class="info-product">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$99.00</div>
+             </div> <!-- End productCaption-->
+           </div>    <!-- End productItem-->
+           <div id="productItem" class="col-md-10 ">
+            <img src="images/demo-2/nunc-quis-gravida (1).jpg"  alt="">
+            <div id="imgOverlay">
+               <img src="images/demo-2/nunc-quis-gravida.jpg" alt="">
+            </div>   <!-- End imgOverlay--> 
+            <div class="productInfo">
+              <a href="#">
+                <i class="fas fa-cart-plus"></i>
+                <span>Select options</span>
+              </a>
+             </div> <!-- End productInfo-->
+             <div class="productCaption">
+                <a href="#" class="product_name">Fusce et semper</a>
+                <div class="product-cats">Shop</div>
+                <div class="info-product">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$99.00</div>
+             </div> <!-- End productCaption-->
+           </div>    <!-- End productItem-->
+    </div> <!-- owl-carousel -->
+    <div class="owl-carousel owl-theme row">
+      <div id="productItem" class="col-md-10 ">
+       <img src="images/demo-2/man.jpg"  alt="">
+       <div id="imgOverlay" class="overflow-hidden">
+          <img src="images/demo-2/man(1).jpg" alt="">
+       </div>   <!-- End imgOverlay--> 
+       <div class="productInfo">
+        <a href="#">
+          <i class="fas fa-cart-plus"></i>
+          <span>Select options</span>
+        </a>
+       </div> <!-- End productInfo-->
+       <div class="productCaption">
+          <a href="#" class="product_name">Maecenas non massa</a>
+          <div class="product-cats">Shop</div>
+          <div class="info-product">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </div>
+          <div class="price">$109.00</div>
+       </div> <!-- End productCaption-->
+      </div>    <!-- End productItem-->
+      <div id="productItem" class="col-md-10 ">
+          <img src="images/demo-2/man2.jpg"  alt="">
+          <div id="imgOverlay">
+             <img src="images/demo-2/man(2).jpg" alt="">
+          </div>   <!-- End imgOverlay--> 
+          <div class="productInfo">
+            <a href="#">
+              <i class="fas fa-cart-plus"></i>
+              <span>Select options</span>
+            </a>
+           </div> <!-- End productInfo-->
+           <div class="productCaption">
+              <a href="#" class="product_name">Donec volutpat elem</a>
+              <div class="product-cats">Shop</div>
+              <div class="info-product">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <div class="price">$8.00</div>
+           </div> <!-- End productCaption-->
+         </div>    <!-- End productItem-->
+         <div id="productItem" class="col-md-10 ">
+          <img src="images/demo-2/sed-hendrerit-tempor.jpg"  alt="">
+          <div id="imgOverlay">
+             <img src="images/demo-2/sed-hendrerit-tempor (1).jpg" alt="">
+          </div>   <!-- End imgOverlay--> 
+          <div class="productInfo">
+            <a href="#">
+              <i class="fas fa-cart-plus"></i>
+              <span>Select options</span>
+            </a>
+           </div> <!-- End productInfo-->
+           <div class="productCaption">
+              <a href="#" class="product_name">Sed hendrerit tempor</a>
+              <div class="product-cats">Shop</div>
+              <div class="info-product">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <div class="price">$74.00</div>
+           </div> <!-- End productCaption-->
+         </div>    <!-- End productItem-->
+         <div id="productItem" class="col-md-10 ">
+          <img src="images/demo-2/quisque-non-finibus (1).jpg"  alt="">
+          <div id="imgOverlay">
+             <img src="images/demo-2/quisque-non-finibus.jpg" alt="">
+          </div>   <!-- End imgOverlay--> 
+          <div class="productInfo">
+            <a href="#">
+              <i class="fas fa-cart-plus"></i>
+              <span>Select options</span>
+            </a>
+           </div> <!-- End productInfo-->
+           <div class="productCaption">
+              <a href="#" class="product_name">Quisque non finibus</a>
+              <div class="product-cats">Shop</div>
+              <div class="info-product">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <div class="price">$18.00</div>
+           </div> <!-- End productCaption-->
+         </div>    <!-- End productItem-->
+         <div id="productItem" class="col-md-10 ">
+          <img src="images/demo-2/nunc-quis-gravida (1).jpg"  alt="">
+          <div id="imgOverlay">
+             <img src="images/demo-2/nunc-quis-gravida.jpg" alt="">
+          </div>   <!-- End imgOverlay--> 
+          <div class="productInfo">
+            <a href="#">
+              <i class="fas fa-cart-plus"></i>
+              <span>Select options</span>
+            </a>
+           </div> <!-- End productInfo-->
+           <div class="productCaption">
+              <a href="#" class="product_name">Fusce et semper</a>
+              <div class="product-cats">Shop</div>
+              <div class="info-product">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <div class="price">$99.00</div>
+           </div> <!-- End productCaption-->
+         </div>    <!-- End productItem-->
+    </div>
+
+ </div>
+ 
+
+
+ </section>   
+</main>
+<!--- End Section Products =====-->
+<!-- Start Section Testimonials -->
+<main>
+ <section class="testimonial">
+ <div class="container">
+  <h2 class="testi-title">CUSTOMERS REVIEWS</h2>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <div class="w-100  d-flex justify-content-center">
+        <img src="images/testimonials/demo2-testi1.jpg" class="rounded-circle" alt="...">
+       </div>
+        <div class="carousel-caption">
+          <h5 class="testimonial-name">Jane Doe</h5>
+          <span class="testimonial-job">Online Marketer</span>
+          <p>
+            A faucibus ullamcorper metus class suspendisse scelerisque dui a eget amet pulvinar purus elementum scelerisque massa cursus dolor turpis facilisis a adipiscing penatibus.Id sed molestie mi adipiscing bibendum elit a adipiscing ad malesuada a platea suspendisse varius a magnis taciti consectetur hac a malesuada ante bibendum.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="w-100  d-flex justify-content-center ">
+         <img src="images/testimonials/demo2-testi2.jpg" class="rounded-circle" alt="...">
+        </div>
+         <div class="carousel-caption">
+           <h5 class="testimonial-name">Jane Doe</h5>
+           <span class="testimonial-job">Online Marketer</span>
+           <p>
+             A faucibus ullamcorper metus class suspendisse scelerisque dui a eget amet pulvinar purus elementum scelerisque massa cursus dolor turpis facilisis a adipiscing penatibus.Id sed molestie mi adipiscing bibendum elit a adipiscing ad malesuada a platea suspendisse varius a magnis taciti consectetur hac a malesuada ante bibendum.
+           </p>
+         </div>
+       </div>
+       <div class="carousel-item ">
+        <div class="w-100  d-flex justify-content-center">
+         <img src="images/testimonials/demo2-testi3.jpg" class="rounded-circle" alt="...">
+        </div>
+         <div class="carousel-caption">
+           <h5 class="testimonial-name">Jane Doe</h5>
+           <span class="testimonial-job">Online Marketer</span>
+           <p>
+             A faucibus ullamcorper metus class suspendisse scelerisque dui a eget amet pulvinar purus elementum scelerisque massa cursus dolor turpis facilisis a adipiscing penatibus.Id sed molestie mi adipiscing bibendum elit a adipiscing ad malesuada a platea suspendisse varius a magnis taciti consectetur hac a malesuada ante bibendum.
+           </p>
+         </div>
+       </div>
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ </div>
+ </section> 
+</main>
+<!-- Start Section Testimonials -->
+<!-- Start Section Bestsellers -->
+<main>
+ <section class="Section-Bestsellers">
+  <div class="text-center my-3">
+    <span class="heading-title">AKIRA COLLECTIONS </span>
+    <h2 class="title">OUR BESTSELLERS </h2>
+    <div class="description">
+        Nullam gravida, dolor ac ultrices lobortis, mi dolor justo.
+    </div>
+  </div>
+  <div class="container">
+   <div class="row g-3">
+    <div class="col-md-3" id="listImage">
+      <img src="images/demo-2/cat1.jpg" class="w-100" alt="Bestsellers">
+      <!-- Scrollable modal -->
+      <button type="button" class="btn btn-warning w-100 rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> VIEW </button>
+      <!-- Scrollable modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="staticBackdropLabel">Detaials Products</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div id="details">
+          <div id="BestsellerName">Mauris id libero </div>
+          <span class="ax-product-cats text-dark"> Clothes </span>
+          <div class="info-product text-warning py-4">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price text-dark">$70.00</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    </div> <!-- End Col-->
+    <div class="col-md-3" id="listImage">
+      <img src="images/demo-2/cat2.jpg" class="w-100" alt="Bestsellers">
+      <!-- Scrollable modal -->
+      <button type="button" class="btn btn-warning w-100 rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> VIEW </button>
+      <!-- Scrollable modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="staticBackdropLabel">Detaials Products</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div id="details">
+          <div id="BestsellerName">Mauris id libero </div>
+          <span class="ax-product-cats text-dark"> 
+						Accessories
+					 </span>
+          <div class="info-product py-4">
+            <i class="text-warning fas fa-star"></i>
+            <i class=" text-warning fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price text-dark">$40.00</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    </div> <!-- End Col--> 
+    <div class="col-md-3" id="listImage">
+      <img src="images/demo-2/cat3.jpg" class="w-100" alt="Bestsellers">
+      <!-- Scrollable modal -->
+      <button type="button" class="btn btn-warning w-100 rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> VIEW </button>
+      <!-- Scrollable modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="staticBackdropLabel">Detaials Products</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div id="details">
+          <div id="BestsellerName">Mauris id libero </div>
+          <span class="ax-product-cats text-dark"> Clothes </span>
+          <div class="info-product py-4">
+            <i class="text-warning fas fa-star"></i>
+            <i class=" text-warning fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price text-dark">$20.00</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    </div> <!-- End Col--> 
+    <div class="col-md-3" id="listImage">
+      <img src="images/demo-2/cat4.jpg" class="w-100" alt="Bestsellers">
+      <!-- Scrollable modal -->
+      <button type="button" class="btn btn-warning w-100 rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> VIEW </button>
+      <!-- Scrollable modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="staticBackdropLabel">Detaials Products</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div id="details">
+          <div id="BestsellerName">Mauris id libero </div>
+          <span class="ax-product-cats text-dark"> Clothes </span>
+          <div class="info-product py-4">
+            <i class="text-warning fas fa-star"></i>
+            <i class=" text-warning fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price text-dark">$60.00</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    </div> <!-- End Col--> 
+    <div class="col-md-3" id="listImage">
+      <img src="images/demo-2/cat5.jpg" class="w-100" alt="Bestsellers">
+      <!-- Scrollable modal -->
+      <button type="button" class="btn btn-warning w-100 rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> VIEW </button>
+      <!-- Scrollable modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="staticBackdropLabel">Detaials Products</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div id="details">
+          <div id="BestsellerName">Mauris id libero </div>
+          <span class="ax-product-cats text-dark"> Clothes </span>
+          <div class="info-product py-4">
+            <i class="text-warning fas fa-star"></i>
+            <i class=" text-warning fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price text-dark">$40.00</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    </div> <!-- End Col--> 
+    <div class="col-md-3" id="listImage">
+      <img src="images/demo-2/cat7.jpg" class="w-100" alt="Bestsellers">
+      <!-- Scrollable modal -->
+      <button type="button" class="btn btn-warning w-100 rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> VIEW </button>
+      <!-- Scrollable modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="staticBackdropLabel">Detaials Products</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div id="details">
+          <div id="BestsellerName">Mauris id libero </div>
+          <span class="ax-product-cats text-dark"> Clothes </span>
+          <div class="info-product py-4">
+            <i class="text-warning fas fa-star"></i>
+            <i class=" text-warning fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price text-dark">$40.00</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    </div> <!-- End Col--> 
+    <div class="col-md-3" id="listImage">
+      <img src="images/demo-2/cat8.jpg" class="w-100" alt="Bestsellers">
+      <!-- Scrollable modal -->
+      <button type="button" class="btn btn-warning w-100 rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> VIEW </button>
+      <!-- Scrollable modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="staticBackdropLabel">Detaials Products</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div id="details">
+          <div id="BestsellerName">Mauris id libero </div>
+          <span class="ax-product-cats text-dark"> Clothes </span>
+          <div class="info-product py-4">
+            <i class="text-warning fas fa-star"></i>
+            <i class=" text-warning fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price text-dark">$40.00</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    </div> <!-- End Col--> 
+    <div class="col-md-3" id="listImage">
+      <img src="images/demo-2/cat9.jpg" class="w-100" alt="Bestsellers">
+      <!-- Scrollable modal -->
+      <button type="button" class="btn btn-warning w-100 rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> VIEW </button>
+      <!-- Scrollable modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="staticBackdropLabel">Detaials Products</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div id="details">
+          <div id="BestsellerName">Mauris id libero </div>
+          <span class="ax-product-cats text-dark"> Clothes </span>
+          <div class="info-product py-4">
+            <i class="text-warning fas fa-star"></i>
+            <i class=" text-warning fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price text-dark">$40.00</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    </div> <!-- End Col--> 
+   </div>
+
+   <div id="itemImageContainer">
+    <div id="itemListImage">
+      <i class="fas fa-times-circle fs-2 text-danger" id="closeBttn"></i>
+      <i class="fas fa-arrow-alt-circle-left fs-2 text-bg-danger" id="prev"></i>
+      <i class="fas fa-arrow-alt-circle-right fs-2 text-bg-danger" id="next"></i>
+    </div>
+   </div>
+  </div>
+ </section> 
+</main>
+<!-- End Section Bestsellers  -->
+<!-- Start background-overlay -->
+<main>
+  <section class="background-overlay">
+    <div class="container">
+    <div class="vc-container">
+      <div class="contenText">
+        <span class="vc-text">WE MAKE IT EASY TO EXPRIENCE CREATIVITY </span>
+        <h3 class="vc-title">STYLISH NEW DESIGN</h3>
+        <p class="vc-desc">
+          Welcome to the home of women's fashion clothing & accessories at Italy
+        </p>
+        <a href="#" class="btn vc-btn">SHOP NOW!</a>
+      </div>
+    </div>
+    </div>
+
+  </section>
+</main>
+<!-- End background-overlay  -->
+<!-- Start Section Blog      -->
+<main class="overflow-hidden">
+  <section class="Section-Blog">
+    <div class="text-center my-3">
+      <span class="heading-title">AKIRA COLLECTIONS </span>
+      <h2 class="title text-dark fw-bold">LATEST FROM BLOG </h2>
+      <div class="description">
+          Nullam gravida, dolor ac ultrices lobortis, mi dolor justo.
+      </div>
+    </div>
+    <div class="container">
+      <div class="owl-carousel">
+        <div class=""> 
+        <div class="card">
+          <div class="card-img">
+            <img src="images/blog-thumbnail/14-home_default.jpg" alt="">
+          </div>
+          <div class="card-body text-center">
+            <a href="#" class="blog-name">Nullam dignissim purus nec</a>
+            <p>Vestibulum malesuada varius mi id congue. Phasellus aliquam mollis ex,...</p>
+            <a class="read-more" href="#" title="Read more">Read more</a>
+          </div>
+        </div>  
+        </div>
+        <div class=""> 
+          <div class="card">
+            <div class="card-img">
+              <img src="images/blog-thumbnail/9-home_default.jpg" alt="">
+            </div>
+            <div class="card-body text-center">
+              <a href="#" class="blog-name">Cras viverra justo ut</a>
+              <p>Vestibulum malesuada varius mi id congue. Phasellus aliquam mollis ex,...</p>
+              <a class="read-more" href="#" title="Read more">Read more</a>
+            </div>
+          </div>  
+          </div>
+          <div class=""> 
+            <div class="card">
+              <div class="card-img">
+                <img src="images/blog-thumbnail/15-home_default.jpg" alt="">
+              </div>
+              <div class="card-body text-center">
+                <a href="#" class="blog-name">Quisque ac pulvinar leo</a>
+                <p>Vestibulum malesuada varius mi id congue. Phasellus aliquam mollis ex,...</p>
+                <a class="read-more" href="#" title="Read more">Read more</a>
+              </div>
+            </div>  
+            </div>
+            <div class=""> 
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/blog-thumbnail/16-home_default.jpg" alt="">
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="blog-name">Cras viverra justo ut</a>
+                  <p>Vestibulum malesuada varius mi id congue. Phasellus aliquam mollis ex,...</p>
+                  <a class="read-more" href="#" title="Read more">Read more</a>
+                </div>
+              </div>  
+              </div>
+              <div class=""> 
+                <div class="card">
+                  <div class="card-img">
+                    <img src="images/blog-thumbnail/12-home_default.jpg" alt="">
+                  </div>
+                  <div class="card-body text-center">
+                    <a href="#" class="blog-name">Cras viverra justo ut</a>
+                    <p>Vestibulum malesuada varius mi id congue. Phasellus aliquam mollis ex,...</p>
+                    <a class="read-more" href="#" title="Read more">Read more</a>
+                  </div>
+                </div>  
+                </div>
+                <div class=""> 
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="images/blog-thumbnail/11-home_default.jpg" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                      <a href="#" class="blog-name">Cras viverra justo ut</a>
+                      <p>Vestibulum malesuada varius mi id congue. Phasellus aliquam mollis ex,...</p>
+                      <a class="read-more" href="#" title="Read more">Read more</a>
+                    </div>
+                  </div>  
+                  </div>
+                  <div class=""> 
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="images/blog-thumbnail/13-home_default.jpg" alt="">
+                      </div>
+                      <div class="card-body text-center">
+                        <a href="#" class="blog-name">Cras viverra justo ut</a>
+                        <p>Vestibulum malesuada varius mi id congue. Phasellus aliquam mollis ex,...</p>
+                        <a class="read-more" href="#" title="Read more">Read more</a>
+                      </div>
+                    </div>  
+                    </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- End Section Blog       -->
+<!-- Start Section          -->
+<main>
+  <div class="section-wrap">
+    <div class="container">
+     <div class="row elementor-row">
+      <div class="col-md-6">
+        <h3 class="title">SIGN-UP <strong>NEWSLETTER</strong></h3>
+        <p class="text-muted">Sign up for the latest news, offers and styles    </p>
+      </div>
+      <div class="col-md-6">
+        <div class="inputForm">
+          <input type="text" class="form-control">
+          <button class="btn ">Subscribe</button>
+        </div>
+        <label for="" class="elementor_psgdpr_consent_message">
+          <input type="checkbox" name="psgdpr_consent_checkbox" value="1" required="">
+          Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt.
+
+        </label>
+      </div>
+     </div>
+    </div>
+  </div>
+</main>
+<!-- End Section            -->
+<!-- Start Section Footer  -->
+<main>
+  <footer>
+    <div class="container">
+      <div class="row ">
+        <div class="footer-item col-12 col-lg-3">
+          <a href="index.html"> 
+            <img src="images/logo/demo2-logo-w.png" alt="">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque 
+              volutpat mattis eros. Nullam malesuada erat ut turpis.
+               Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede ...
+            </p>
+          </a>
+        </div>
+        <div class="footer-item col-md-6 col-lg-3 ">
+          <h2 class="title">CONTACT US</h2>
+          <div><span>Address: </span> <a href="#">  123 Fake Street, New York</a></div>
+          <div><span>Phone: </span> <a href="#">  (08) 8827 633354</a></div>
+          <div><span>Fax: </span> <a href="#">  (08) 8827 633354</a></div>
+          <div><span>Mail: </span> <a href="#">   contact@yoursite.com</a></div>
+          <div><span>Openning: </span> <a href="#">   8:00 - 19:00, Mon - Sat</a></div>
+        </div>
+        <div class="footer-item col-md-6 col-lg-2">
+          <h2 class="title">INFORMATION</h2>
+          <div><a href="#">  About us</a></div>
+          <div><a href="#">  Legal Notice</a></div>
+          <div><a href="#">  Addresses</a></div>
+          <div><a href="#">   Order</a></div>
+          <div><a href="#"> Payment</a></div>
+          <div><a href="#"> Suppliers</a></div>
+        </div>
+        <div class="footer-item col-md-6 col-lg-2">
+          <h2 class="title">MY ACCOUNT</h2>
+          <div> <a href="#">  Delivery</a></div>
+          <div><a href="#"> Legal Notice</a></div>
+          <div><a href="#">  About us</a></div>
+          <div><a href="#">   Prices drop</a></div>
+          <div><a href="#"> New products</a></div>
+          <div><a href="#"> Best sales</a></div>
+        </div>
+        <div class="footer-item col-md-6 col-lg-2">
+          <h2 class="title">COMPANY</h2>
+          <div><a href="#"> My account</a></div>
+          <div><a href="#"> My Cart</a></div>
+          <div><a href="#">Identity</a></div>
+          <div><a href="#">Order</a></div>
+          <div><a href="#">Contact us</a></div>
+          <div><a href="#">Addresses</a></div>
+        </div>
+      </div>
+
+      <div class="End-Footer">
+        Copyright © 2021 Akira Store. All Rights Reserved. 
+      </div>
+    </div>
+  </footer>
+</main>
+<!-- Install Javascript File -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/particles.json"></script>
+    <script src="js/particles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
